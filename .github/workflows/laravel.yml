@@ -18,6 +18,8 @@ jobs:
     - uses: actions/checkout@v3
     - name: Copy .env
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+    - name: Installing laravel/ui
+      run: composer require laravel/ui
     - name: Updating Composer Lock File
       run: composer update --ignore-platform-reqs
     - name: Install Dependencies
