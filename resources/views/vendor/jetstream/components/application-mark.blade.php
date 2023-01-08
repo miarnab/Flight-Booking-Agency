@@ -1,2 +1,1 @@
-<img src="{{ asset('icons/application-icon.png') }}"
-
+<img src="{{ asset('icons/application-icon.png') }}"/>
